@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react';
 const Dashboard = () => {
   const [hospitals, setHospitals] = useState([]);
   const [error, setError] = useState(null);
-
+//Use effect to update hospitals based on loc
   useEffect(() => {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
